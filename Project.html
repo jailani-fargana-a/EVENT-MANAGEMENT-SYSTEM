@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FM Events</title>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="flex">
+            <div><h1 class="head"class="items" >FM Events</h1></div><BR><BR>
+            <div class="items"><button type="button" class="box4" onclick="window.location.href='../html/cart.php'">SHOP</button></div>
+            <div  class="items"><button type="button"class="box"  onclick="window.location.href='login.php'" >SIGN-UP</button></div>
+            <div  class="items"><button type="button"class="box5"  onclick="window.location.href='../html/Signup.html'" >SIGN-IN</button></div>
+            <div class="items"><button type="button" class="box1"  onclick="window.location.href='event.html'">EVENTS</button></div>
+            <div class="items"><button type="button" class="box2" onclick="window.location.href='about.html'">ABOUT</button></div>
+            <div class="items"><button type="button" class="box3" onclick="window.location.href='Project.html'">HOME</button></div>
+            
+        </div>
+            <!-- AUTOMATIC NAVIGATION SLIDE -->
+        <div class="slider">
+            <div class="slides">
+
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+
+
+                <div class="homeslide">
+                    <div class="hero-image-home">
+                        <div class="hero-text-home">
+                          <h1 style="font-size:65px;color:antiquewhite;position: relative;top:-10%">FM Events</h1>
+                          <p style="color: azure;font-family:Georgia, 'Times New Roman', Times, serif;position: relative;top:15%;width: 550px;">&nbsp;&nbsp;&nbsp;It isn't where you came from,<br>&nbsp;&nbsp;&nbsp;It's where you are going that counts.</p>                     
+                        </div>
+                      </div>
+                </div>
+                <div class="aboutslide">
+                    <div class="hero-image-about">
+                        <div class="hero-text-about">
+                          <h1 style="font-size:50px;color:antiquewhite;position: relative;top:-20%">Growth Rate</h1>
+                          <p style="font-family:Georgia, 'Times New Roman', Times, serif;position: relative;top:-10%">Started with two colleges in 1960s, nearly 100+ colleges have been enrolled in our website. The Young Leaders of this society can easily be evolved in through this background</p>                     
+                        </div>
+                      </div>
+                </div>
+                <div class="eventslide">
+
+                    <div class="hero-image-event">
+                        <div class="hero-text-event">
+                          <h1 style="font-size:50px;color:antiquewhite;position: relative;top:-20%">FM Events</h1>
+                          <p style="color: white;font-family:Georgia, 'Times New Roman', Times, serif;position: relative;font-size: 40px;font-weight: bolder;top:-10%">70+ Events &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10+Colleges<br><br>&nbsp;&nbsp;&nbsp;&nbsp;100+FunActivities</p>                     
+                        </div>
+                      </div>
+
+                </div>
+                <div class="loginslide">
+
+                    <div class="hero-image-login">
+                        <div class="hero-text-login">
+                          <h1 style="font-size:50px;color:antiquewhite;position: relative;top:-10%">Log-in Now!</h1>To show your talents in various places...
+                          <p style="color: gold;font-family:Georgia, 'Times New Roman', Times, serif;position: relative;top:20px"><button type="button" onclick="window.location.href='../html/login.html'" class="hero-text-button">LOG-IN</button></p>                     
+                        </div>
+                      </div>
+
+                </div>
+
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="icons">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+        <a href="mailto:jailanifargana.ct3022@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+        <script>
+            //slideauto-START
+            var counter=1;
+setInterval(function(){
+    document.getElementById('radio'+counter).checked=true
+    counter++;
+    if(counter>4)
+   { counter=1;}
+},2800);
+//slideauto-END
+
+       </script>    
+    </body>
+</html>

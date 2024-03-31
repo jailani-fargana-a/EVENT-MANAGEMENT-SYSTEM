@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>REGISTRATION|FM EVENTS</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style_login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hero-image-home{
+            height:600px;
+            background-image: url(../img/reg.jpg);
+            position: relative;
+            left: 250px;
+            border:5px double white;
+            border-radius: 30px;
+        }
+        .hero-text-home{
+            top:300px;
+            left: 330px;
+            
+        }
+                        
+        button.login{
+        background-color:rgb(213, 206, 206);
+        color:#8484fd;
+        font-size: 30px;
+        border: 2px solid #8f99bc;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right:0;
+        }
+        button.login:hover{
+        color: #1a285a;
+        background-color:rgb(207, 197, 200);
+
+        }
+    </style>        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head><body>
+    <h1 class="head"><u>REGISTRATION:</u> </h1>
+    <br>
+
+    <div class="homeslide">
+        <div class="hero-image-home">
+            <div class="hero-text-home">
+                <form action="https://httpbin.org/get" method="get" name="form">
+                    <fieldset>
+                        <legend style="font-size: 60px;">Register</legend>
+                    <label for="email">Email Id</label>&nbsp;<input type="email" placeholder="abc@gmail.com"required><br>
+                <label for="phone">Mobile</label>&nbsp;<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="123-456-7890"required><br>
+                        <label for="password">Password</label>
+                <input type="password" id="pw" ><br>
+               <input type="checkbox" onclick="password()">Show Password
+                <br>
+               <button type="submit" class="login">Login</button>
+               
+    <script>
+        function password(){
+        var x=document.getElementById("pw");
+        if(x.type==="password")
+        {
+            x.type="text";
+        }
+        else{
+         x.type ="password";
+        }
+    }
+    </script>
+    
+                 </fieldset>           
+                 </form>
+                 
+                
+            </div>
+          </div>
+    </div>
+
+
+
+
+ </body>
+ </html>

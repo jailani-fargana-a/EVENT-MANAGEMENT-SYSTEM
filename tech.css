@@ -1,0 +1,261 @@
+
+button.backToHome{
+    position: sticky;
+    float: right;
+    background-color: #d9ddbd;
+    color:#191970;
+    font-size: 30px;
+    border: 2px solid #8f99bc;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+  }
+
+
+.title::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .title:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .title::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(237, 100%, 75%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  .title {
+    position: relative;
+    font-size: 5rem;
+  }
+
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+.row{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    left: 100px;
+}
+img{
+    position: relative;
+    /* top:-20px; */
+ width:100%;   
+ height: 300px;
+}
+.title{
+    float:left;
+    font-family: 'Times New Roman';
+    width:33%;
+    text-align:center;
+    color:beige;
+    height:300px;
+    /* background-color: #39bebe; */
+    font-size:40px;
+    border: 2px solid whitesmoke;
+    border-radius:30px ;
+    overflow: hidden;
+}
+.reg{
+    position: relative;
+    /* top:-50px; */
+    width: 300px;
+    height: 50px;
+    /* color: cornflowerblue; */
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrap {
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonc {
+    top: -40px;
+    min-width: 500px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4f74d1;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .buttonc::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(500px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .buttonc:hover, .buttonc:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .buttonc:hover::before, .buttonc:focus::before {
+    opacity: 1;
+  }
+  
+  .buttonc::after {
+    content: '';
+    width: 100px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .buttonc:hover::after, .buttonc:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  fieldset{ max-width: 300px;}
+fieldset>textarea{width:100%}
+fieldset>button{float:right}
+
+.hidden{
+  display:none;
+}
+body.show-notifications{
+  overflow:hidden;
+}
+body.show-notifications #divNotificationArea{
+  display:flex;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  position:fixed;
+  background-color:#0009;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+#divNotificationArea{
+  display:none;
+}
+.dialogBody{
+  padding:0 20px;
+  display:block;
+  background-color:white;
+  min-width:300px;
+  max-width:400px;
+  width:100%;
+  min-height:50%;
+}
+.button{
+  top: -40px;
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4f74d1;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+.button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .button:hover::before, .button:focus::before {
+    opacity: 1;
+  }
+  
+  .button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .button:hover::after, .button:focus::after {
+    animation: none;
+    display: none;
+  }

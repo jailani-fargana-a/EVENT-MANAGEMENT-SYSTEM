@@ -1,0 +1,128 @@
+
+.head{
+    display: inline-block;
+    animation: slide-left 0.5s ease forwards;   
+    font-size: 2.5em;
+    font-style: oblique;
+    color: white;
+    text-shadow: 0 0 5px rgb(8, 30, 72),0 0 10px rgb(247, 247, 244),0 0 15px #00ccff;
+}
+@keyframes slide-left {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {transform: translateX(30px);
+    }
+  }
+.column{
+    display: flex;
+    /* background-color: #C0F6FB; */
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.title{
+    float:left;
+    font-family: 'Times New Roman';
+    /* width:20vw; */
+    text-align:center;
+    color:chocolate;
+    /* height:30vh; */
+    /* background-color:rgb(170, 60, 60); */
+    font-size:40px;
+    
+}
+button.tech,button.non-tech{
+    
+  cursor:hand;
+    position: relative;
+    float: right;
+     background-color:transparent ;
+    color:#4290f6;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 50px;
+    width:500px;
+    height: 300px;
+    /* border: 2px solid #8f99bc; */
+    top: 25px;
+    /* left: -20px; */
+    bottom: 0;
+    /* right:50px; */
+  }
+  
+.hero-image-home {
+    /* home */
+    background-image:  url(../img/code.png);
+    height: 300px;
+    width:500px;
+    
+    border-radius: 30px;
+    overflow:hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-image-non {
+    /* home */
+    background-image:url(../img/fungames.png );
+    height: 300px;
+    width:500px;
+    
+    border-radius: 30px;
+    overflow:hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text-home {
+    text-align: center;
+    position: relative;
+    top: 25%;
+    /* left: 50%; */
+    width:500px;
+    height:200px;
+    transform: translate(-50%, -50%);
+    color:#00ccff;
+  }
+
+
+  .hero-image-non:hover {
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom right,#aaa,#06233d),url("../img/fungames.png");
+    top: -30px;  
+    border:2px solid white;
+  }
+
+
+  .hero-image-home:hover {
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom right,#aaa,#06233d),url("../img/code.png");
+    top: -30px;  
+    border:2px solid white;
+    
+  }
+  
+
+  button.backToHome{
+    position: sticky;
+    float: right;
+    background-color: #d9ddbd;
+    color:#191970;
+    font-size: 30px;
+    border: 2px solid #8f99bc;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+  }
+
+
+

@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: auto;
+  color:#EAEBE6;
+  font-style:italic;
+}
+
+.right {
+
+  float: left;
+  width: 40%;
+  left:-95px;
+  top:30px;
+  position: relative;
+ padding: 0px;
+  /* border:2px solid white; */
+  border-radius: 40px;
+  overflow: hidden;
+  color:antiquewhite;
+}
+
+
+.hero-image-login {
+  /* home */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/login.jpg);
+  height:750px;
+  width:600px;
+  overflow: hidden;
+  border-radius: 50px ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text-login {
+  text-align: center;
+  position: relative;
+  top: 55%;
+  left: 40%;
+  width:580px;
+  height:580px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+body{
+  line-height: 70px;
+  color:beige;
+}
+#photo{
+  float: right;
+  padding: 0;
+  margin:0;
+  position: relative;
+  left:30%;
+}
+fieldset{
+  width:500px;
+  border: 2px solid whitesmoke;
+  border-radius: 40px;
+  position: relative;
+  /* left:25%; */
+}
+span{
+  
+ padding: 10px 50px;
+  border:2px solid white;
+  border-radius: 15px;
+}
+
+
+label{
+  color:whitesmoke;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: oblique;
+ }
+input{
+  height: 50px;
+  font-size: 30px;
+}
+
+[type="checkbox"], [type="radio"],[type="textarea"] {
+  height:50px;
+  position: relative;
+  top:5px; 
+  width:30px;}
+ button.backToHome{
+  position: sticky;
+  float: right;
+  background-color:beige;
+  color:#191970;
+  font-size: 30px;
+  border: 2px solid #8f99bc;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+}
+button.backToHome:hover{
+  color: #8f99bc;
+  background-color:lavenderblush;
+
+}

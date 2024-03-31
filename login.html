@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>LOG-IN|FM EVENTS</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style_login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        
+    <h1 class="head">LOG-IN</h1>
+    
+    <br>
+    <div class="main">
+    <form action="C:\xampp\htdocs/login.php" method="post" id="signup" novalidate>
+        <fieldset>
+            <legend style="color: bisque;font-size:60px">Login</legend>
+            <input type="file" id="photo" name="photo"multiple accept=".png, .jpg" value="Photo">
+            <label for="name">Name</label>&nbsp;<input type="text" name="name" id="name" autofocus="on" placeholder="Write your name" onkeydown="return /[a-z A-Z]/i.test(event.key)" required><br>
+            <label for="email">Email Id</label>&nbsp;<input type="email" id="mail" placeholder="abc@gmail.com"required><br>
+            <label for="password">Password:</label>&nbsp;<input type="password" id="password" required>
+            <br>
+            <label for="password"> Confirm Password:</label>&nbsp;<input type="password" id="password-confirm" required><br>
+            <label for="phone">Mobile</label>&nbsp;<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="123-456-7890"required><br>
+            <label for="level">Education&nbsp;&nbsp;</label>
+            <input type="radio" name="level" id="school"onclick="Scl_Clg()"><label for="school">School</label>&nbsp;&nbsp;
+           <input type="radio" name="level" id="college" onclick="Scl_Clg()"><label for="college">College</label><p id="scl_clg"></p>
+           <input type="submit" value="Submit your Entries"> 
+            <input type="reset" value="Reset Your Entries">
+
+           <script>
+            function Scl_Clg(){
+    var scl=document.getElementById('school')
+    var clg=document.getElementById('college')
+    var scl_clg;
+    if(scl.checked)
+    {
+        scl_clg="<label for='scl_name'>Name Of the School</label>&nbsp;<input type='text' placeholder='Abc Hr Sec School'required><br><label for='scl_yr'>Studying In</label>&nbsp;<input type='number' min='10' max='12'required><br>"
+        document.getElementById('scl_clg').innerHTML=scl_clg;
+
+    }
+    
+    if(clg.checked)
+    {
+        scl_clg="<label for='scl_name'>Name Of the College</label>&nbsp;<input type='text' placeholder='college name'required><br><label for='scl_name'>Year Studying:</label>&nbsp;<input type='number'min='1' max='4' required><br>"
+        document.getElementById('scl_clg').innerHTML=scl_clg;
+
+    }
+};
+           </script>
+           <p>-------------------or Login with---------------------</p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="../img/googlelogo.png" alt=""width="20px"><a href="https://accounts.google.com/v3/signin/identifier?dsh=S403640224%3A1689953040898768&authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2Bsign%2Bin%26oq%3Dgoogle%2Bsig%26gs_lcrp%3DEgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyDQgBEAAYgwEYsQMYgAQyBggCEEUYOTIHCAMQABiABDIKCAQQABixAxiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABKgCALACAA%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession">&nbsp;Google</a></span><span><img src="../img/facebooklogo.png" alt="" width="20px"><a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjg5OTUyODY0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">&nbsp;Facebook</a></span>
+        </fieldset>
+    </form>
+</div>
+
+<div class="right">
+    
+    <div class="hero-image-login">
+        <div class="hero-text-login">
+          <h1 style="font-size:50px;color:antiquewhite;position: relative;top:-10%">Sign In Now!</h1>To show your talents in various places...
+          <p style="color: gold;font-family:Georgia, 'Times New Roman', Times, serif;position: relative;top:20px"><button type="button" onclick="window.location.href='../html/login.html'" class="hero-text-button">Sign-in</button></p>                     
+        </div>
+</div>
+</div>
+    <button type="button"  class="backToHome" onclick="window.location.href='../html/Project.html'">BackToHome</button>
+</body>
+</html>

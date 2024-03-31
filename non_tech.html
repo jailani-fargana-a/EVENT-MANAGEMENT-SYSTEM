@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style_about.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/non_tech.css">
+        <link rel="stylesheet" href="../css/tech.css">
+        </head>
+        <body>
+    <h1 class="head">Non-Technical Events</h1><br><br>
+    &nbsp;&nbsp;<button class="buttonc"  onclick="window.location.href='../html/calender.html'">See event calendar</button>
+    <div class="border">
+    <p id="demo"></p>
+   
+             <script>
+             // Set the date we're counting down to
+             var countDownDate = new Date("Aug, 2023 10:30:00").getTime();
+             
+             // Update the count down every 1 second
+             var x = setInterval(function() {
+             
+               // Get today's date and time
+               var now = new Date().getTime();
+                 
+               // Find the distance between now and the count down date
+               var distance = countDownDate - now;
+                 
+               // Time calculations for days, hours, minutes and seconds
+               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                 
+               // Output the result in an element with id="demo"
+               document.getElementById("demo").innerHTML ="COUNTDOWN:"+ days + "d " + hours + "h "
+               + minutes + "m " + seconds + "s ";
+                 
+               // If the count down is over, write some text 
+               if (distance < 0) {
+                 clearInterval(x);
+                 document.getElementById("demo").innerHTML = "EXPIRED";
+               }
+             }, 1000);
+             
+             </script>
+                   
+                 </div>
+            
+    <div class="row">
+                <div class="title"><img src="../img/dance1.png" alt=""width="300px"></div>
+                <div class="title" style="font-size: 30px;"class="text"><p style="font-size: 60px;">
+                    Dance Elite</p><div class="wrap">
+                    <button class="button"class="reg" onclick="window.location.href='../html/reg.html'">Register Now!</button>
+                  </div>Dance the rhythm..</div>
+            </div><br>
+<div class="row">
+            <div class="title"><img src="../img/music.jpg" alt=""width="300px"></div>
+                <div class="title" style="font-size: 30px;"class="text"><p style="font-size: 50px;">
+                    Legends Of Sound</p><div class="wrap">
+                    <button class="button"class="reg" onclick="window.location.href='../html/reg.html'">Register Now!</button>
+                  </div>Lose yourself in the soundwaves.</div>
+            </div><br>
+
+
+<div class="row">
+            <div class="title"><img src="../img/fungames.png" alt=""width="300px"></div>
+                <div class="title" style="font-size: 30px;"class="text"><p style="font-size: 60px;">
+                    Connexions</p><div class="wrap">
+                    <button class="button"class="reg" onclick="window.location.href='../html/reg.html'">Register Now!</button>
+                  </div>Find hints:solve puzzle</div>
+            </div><br>
+            
+
+            <div class="row">
+                <div class="title"><img src="../img/dance.png" alt=""width="300px"></div>
+                    <div class="title" style="font-size: 30px;"class="text"><p style="font-size: 50px;">
+                        Freeze Dance</p><div class="wrap">
+                        <button class="button"class="reg" onclick="window.location.href='../html/reg.html'">Register Now!</button>
+                      </div>Dance to your heartbeat..</div>
+                </div><br>
+
+                
+
+            <div class="row">
+                <div class="title"><img src="../img/dj_night.jpg" alt=""width="300px"></div>
+                    <div class="title" style="font-size: 30px;"class="text"><p style="font-size: 50px;">
+                        DJ Night</p><div class="wrap">
+                        <button class="button"class="reg" onclick="window.location.href='../html/reg.html'">Register Now!</button>
+                      </div>Feel the vibe!</div>
+                </div><br>
+                
+    
+
+
+
+
+    <button type="button"  class="backToHome" onclick="window.location.href='../html/Project.html'">BackToHome</button>
+</body>
+    </html>
